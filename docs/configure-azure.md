@@ -14,7 +14,7 @@ appName=""
 
 az storage account create --name $storageAcctName --location $location --resource-group $funcRgName --sku Standard_LRS
 
-az functionapp create --resource-group $funcRgName --consumption-plan-location $location --runtime dotnet --os-type Linux --functions_version 3 --name $appName --storage-account $storageAcctName
+az functionapp create --resource-group $funcRgName --consumption-plan-location $location --runtime dotnet --os-type Linux --functions-version 3 --name $appName --storage-account $storageAcctName
 ```
 
 A System Assigned Managed Identity will be used to access keys hosted in Azure Key Vault. Enable Managed Identity on the Function App by running the following command:
