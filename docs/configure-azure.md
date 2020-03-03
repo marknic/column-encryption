@@ -30,7 +30,7 @@ Be sure to document the `principalId` listed in the JSON result. It will be requ
 Enter the following in Azure CLI to create the test Service Principal.
 
 ```bash
-az ad sp create-for-rbac --name alwaysprotected-dev --skip-assignment
+az ad sp create-for-rbac --name http://$appName --skip-assignment
 ```
 
 Document the output as it will be required in the next steps.
